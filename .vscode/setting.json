@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "css.validate": false
+}
