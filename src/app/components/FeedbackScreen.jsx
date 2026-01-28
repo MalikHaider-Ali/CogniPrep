@@ -1,8 +1,8 @@
-import Header from 'lucide-react';
+import Header from './header';
 
 export default function FeedbackScreen({ onBack }) {
   return (
-    <div className="min-h-screen pb-20">
+    <div className="min-h-screen bg-gray-950">
       <Header showProfile={true} />
       
       <div className="max-w-4xl mx-auto px-8 py-8">
@@ -72,7 +72,7 @@ export default function FeedbackScreen({ onBack }) {
               </li>
               <li className="flex gap-2">
                 <span className="text-gray-500">•</span>
-                <span>They claim to have "no weaknesses at all," which suggests a lack of self-awareness.</span>
+                <span>They claim to have no weaknesses at all, which suggests a lack of self-awareness.</span>
               </li>
             </ul>
           </div>
@@ -89,10 +89,13 @@ export default function FeedbackScreen({ onBack }) {
         </div>
 
         <div className="flex gap-4">
-          <button onClick={onBack} className="flex-1 bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-xl font-semibold">
+          <button 
+            onClick={onBack} 
+            className="flex-1 bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-xl font-semibold transition-colors"
+          >
             Back to dashboard
           </button>
-          <button className="flex-1 bg-purple-300 text-gray-900 hover:bg-purple-200 px-6 py-3 rounded-xl font-semibold">
+          <button className="flex-1 bg-purple-600 text-white hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold transition-colors">
             Retake interview
           </button>
         </div>
